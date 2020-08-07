@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".DashBoardMainActivity"
+    tools:showIn="@layout/app_bar_dash_board_main">
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:isScrollContainer="true"
+        android:overScrollMode="always"
+        android:scrollbarStyle="outsideInset"
+        android:scrollbars="vertical"
+        android:soundEffectsEnabled="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="true"
+            android:keepScreenOn="false"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/lab1"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/lab1icon"
+                android:onClick="enter"
+                android:tag="livingRoom"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/lab2"
+                android:layout_width="189dp"
+                android:layout_height="187dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/bedroom"
+                android:hapticFeedbackEnabled="true"
+                android:onClick="enter"
+                android:tag="bedRoom"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/lab3"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/kithchen"
+                android:onClick="enter"
+                android:tag="kitchen"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lab1" />
+
+            <Button
+                android:id="@+id/lab4"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/stairs"
+                android:onClick="enter"
+                android:tag="stairs"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lab2" />
+
+            <Button
+                android:id="@+id/lab5"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_marginStart="5dp"
+                android:background="@drawable/computerlab"
+                android:onClick="enter"
+                android:tag="computerLab"
+                android:visibility="invisible"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lab3" />
+
+            <Button
+                android:id="@+id/lab6"
+                android:layout_width="187dp"
+                android:layout_height="187dp"
+                android:layout_marginEnd="5dp"
+                android:background="@drawable/workshop"
+                android:onClick="enter"
+                android:tag="workShop"
+                android:visibility="invisible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lab4" />
+
+            <GridView
+                android:id="@+id/grideView"
+                android:layout_width="421dp"
+                android:layout_height="677dp"
+                android:layout_marginTop="56dp"
+                android:numColumns="2"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:onClick="addRooms"
+                android:text="Add"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.constraint.ConstraintLayout>

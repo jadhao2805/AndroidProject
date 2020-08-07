@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "735907938813",
+    "firebase_url": "https://workshop-440cb.firebaseio.com",
+    "project_id": "workshop-440cb",
+    "storage_bucket": "workshop-440cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:735907938813:android:e459c0f5e23db839",
+        "android_client_info": {
+          "package_name": "com.example.magickit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "735907938813-ejh2h6eaujs3ncjg9pj50vcsv7pb3t4n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbmp6GRQjFFHae-DMfEoRkxhJnG1k1oao"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
